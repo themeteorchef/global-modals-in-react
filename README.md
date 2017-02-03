@@ -1,17 +1,9 @@
-# The Meteor Chef - Base
-A starting point for Meteor apps.
+##### Tutorial: Global Modals in React
 
-<table>
-  <tbody>
-    <tr>
-      <th>Base Version</th>
-      <td>v4.11.1</td>
-    </tr>
-    <tr>
-      <th>Meteor Version</th>
-      <td>v1.4.2.3</td>
-    </tr>
-  </tbody>
-</table>
+In this tutorial, we'll learn how to create global modals in React. We'll see how to cut down on repetition by creating a single modal in our application, populating it with different content based on state. We'll learn how to utilize global state in our application's layout component, seeing how methods can be passed via props using React.cloneElement.
 
-[Read the Documentation](http://themeteorchef.com/base)
+[Learn How to create Global Modals in React](https://themeteorchef.com/tutorials/global-modals-in-react)  
+
+[Download the Source](https://github.com/themeteorchef/global-modals-in-react/archive/master.zip)
+
+The code for this tutorial is licensed under the [MIT License](http://opensource.org/licenses/MIT).

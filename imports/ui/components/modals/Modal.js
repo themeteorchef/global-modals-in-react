@@ -1,18 +1,17 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 
-const renderBodyFooter = (form, body, footer) => {
-  return form || (
-    <div>
-      <Modal.Body>
-        { body }
-      </Modal.Body>
-      <Modal.Footer>
-        { footer }
-      </Modal.Footer>
-    </div>
-  );
-};
+const renderBodyFooter = (form, body, footer) => (
+  form || (
+  <div>
+    <Modal.Body>
+      { body }
+    </Modal.Body>
+    <Modal.Footer>
+      { footer }
+    </Modal.Footer>
+  </div>
+));
 
 const AppModal = ({ show, className, title, form, body, footer, onHide }) => (
   <Modal show={ show } onHide={ onHide } className={ className }>

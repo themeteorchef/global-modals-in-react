@@ -1,3 +1,4 @@
+import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
 
@@ -8,14 +9,15 @@ const Index = ({ modal }) => (
       <p>A starting point for Meteor applications.</p>
       <p><a className="btn btn-success" href="https://themeteorchef.com/base" role="button">Read the Documentation</a></p>
       <p style={ { fontSize: '16px', color: '#aaa' } }>Currently at v4.11.1</p>
-      <Button
+      { Meteor.userId() ? <Button
         bsStyle="success"
         onClick={() => { modal.open('acceptTerms'); }}
-      >Accept Terms</Button>
-      <Button
+        style={{ marginRight: '10px' }}
+      >Accept Terms</Button> : '' }
+      { Meteor.userId() ? <Button
         bsStyle="success"
         onClick={() => { modal.open('addDocument'); }}
-      >Add Document</Button>
+      >Add Document</Button> : '' }
     </Jumbotron>
   </div>
 );

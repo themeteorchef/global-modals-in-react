@@ -7,15 +7,15 @@ export default {
     return {
       modalClasses: 'TermsOfServiceModal',
       modalTitle: 'Accept Terms of Service',
-      modalBody: <TermsOfServiceModalBody {...props } modal={ modal } />,
-      modalFooter: <TermsOfServiceModalFooter {...props } modal={ modal } />,
+      modalBody: <TermsOfServiceModalBody { ...props } modal={ modal } />,
+      modalFooter: <TermsOfServiceModalFooter { ...props } modal={ modal } />,
     };
   },
   addDocument(props, modal) {
     return {
       modalClasses: 'AddDocumentModal',
       modalTitle: 'Add a Document',
-      modalForm: <AddDocumentModalForm {...props } modal={ modal } />,
+      modalForm: <AddDocumentModalForm { ...props } modal={ modal } />,
     };
   }
 };
